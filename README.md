@@ -102,7 +102,6 @@ Avoid treating these files as ordinary editable documents.
 
 ## Repository structure
 
-```text
 docs/
   problem-background.md
   common-failure-modes.md
@@ -117,3 +116,21 @@ scripts/
   render_pdf_to_png.py
   draw_text_on_grid.py
   export_pngs_to_pdf.py
+
+## Minimal prompt for new AI sessions
+
+If you want to hand this problem to another AI or toolchain, use this prompt:
+
+Use Solution S: render the base PDF into PNG pages with PyMuPDF/fitz, draw text cell-by-cell onto each PNG using Pillow, then export all pages back into a PDF. Measure coordinates in image space. Treat each page independently. Do not use normal Word editing logic, OCR reflow, or repeated PDF page deep-copy/merge workflows.
+
+## Current status
+
+This repository contains:
+
+the problem framing
+common failure modes
+the stable workflow
+example placeholders
+starter scripts
+
+It is intended as an open method so that this pain does not remain private expert knowledge.
