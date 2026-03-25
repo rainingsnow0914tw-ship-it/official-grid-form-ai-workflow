@@ -1,4 +1,3 @@
-# official-grid-form-ai-workflow
 # Official Grid Form AI Workflow
 
 A practical workflow for handling fixed-layout, grid-based official document templates with AI.
